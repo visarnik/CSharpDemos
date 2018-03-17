@@ -6,25 +6,15 @@ using System.Threading.Tasks;
 
 namespace App
 {
-    class Car : IBaseCar
+    class Car : ICar
     {
-        private int hp;
-
-        public int HP
+        public string Model { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Power { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Color { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Speed { get; set; }
+        public void driveCar()
         {
-            get { return hp; }
-            set { hp = value; }
+            Speed++;
         }
-        private string name;
-
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-
-        public string Manufacture { get ; set; }
-        public string Model { get; set; }
-        public int Size { get; set; }
     }
 }

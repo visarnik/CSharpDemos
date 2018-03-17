@@ -12,11 +12,6 @@ namespace App
         {
 
 
-            Car lada = new Car();
-            lada.HP = 5;
-            Console.WriteLine(lada.HP);
-            Console.WriteLine();
-            int a = 5;
         }
     }
     

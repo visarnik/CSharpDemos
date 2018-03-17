@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 namespace App
 {
     interface 
-        IBaseCar
+        ICar
     {
-         string  Manufactor { get; set; }
-         string  Model { get; set; }
-         int Size { get; set; }
-
-
+         string Model { get; set; }
+         int Power { get; set; }
+         string Color { get; set; }
+        
     }
 }

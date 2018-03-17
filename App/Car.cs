@@ -23,7 +23,7 @@ namespace App
             set { name = value; }
         }
 
-        public string Manufactor { get ; set; }
+        public string Manufacture { get ; set; }
         public string Model { get; set; }
         public int Size { get; set; }
     }

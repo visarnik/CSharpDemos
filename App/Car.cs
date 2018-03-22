@@ -8,13 +8,24 @@ namespace App
 {
     class Car : ICar
     {
-        public string Model { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Power { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Color { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Model { get; set; }
+        public int Power { get; set; }
+        public string Color { get; set; }
         public int Speed { get; set; }
+
+        public Car()
+        {
+            this.Model = "BMW";
+            this.Speed = 100;
+            this.Power = 120;
+        }
         public void driveCar()
         {
             Speed++;
+        }
+        public void PrintCarInfo()
+        {
+            Console.WriteLine($"{this.Model}, {this.Speed}, {this.Power}");
         }
     }
 }

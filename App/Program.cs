@@ -10,7 +10,13 @@ namespace App
     {
         static void Main(string[] args)
         {
+            
+            Car myCar = new Car();
+            myCar.driveCar();
+            myCar.PrintCarInfo();
+            Garage.AddCarToGarage(myCar);
 
+            Console.Read();
 
         }
     }

@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace App
 {
-      class Garage
+      public static class Garage
     {
-        static List<Car> Fleet = new List<Car>();
+        public static List<Car> Fleet = new List<Car>();
+
+        
 
         public static void AddCarToGarage(Car car)
         {
             Fleet.Add(car);
-
+            Fleet.Last<Car>();
         }
         
+        public static void ShowAllCarsFromGarage()
+        {
+            Fleet.ForEach(x=> Console.WriteLine($"{x.Model}, {x.Speed}, {x.Power}"));
+            
+        }
     }
+    
 }

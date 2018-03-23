@@ -6,18 +6,22 @@ using System.Threading.Tasks;
 
 namespace App
 {
-    class Car : ICar
+   public class Car : ICar
     {
         public string Model { get; set; }
         public int Power { get; set; }
         public string Color { get; set; }
         public int Speed { get; set; }
 
+        public Car (string model, int speed, int power)
+        {
+            this.Model = model;
+            this.Speed = speed;
+            this.Power = power;
+        }
         public Car()
         {
-            this.Model = "BMW";
-            this.Speed = 100;
-            this.Power = 120;
+
         }
         public void driveCar()
         {
@@ -27,5 +31,6 @@ namespace App
         {
             Console.WriteLine($"{this.Model}, {this.Speed}, {this.Power}");
         }
+        
     }
 }

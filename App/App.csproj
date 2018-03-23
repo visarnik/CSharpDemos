@@ -61,7 +61,7 @@
     <Compile Include="Garage.cs" />
     <Compile Include="ICar.cs" />
     <Compile Include="Enums.cs" />
-    <Compile Include="Make.cs" />
+    <Compile Include="Fabric.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -23,10 +23,6 @@ namespace App
         {
 
         }
-        public void driveCar()
-        {
-            Speed++;
-        }
         public void PrintCarInfo()
         {
             Console.WriteLine($"{this.Model}, {this.Speed}, {this.Power}");

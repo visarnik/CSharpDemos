@@ -19,6 +19,7 @@ namespace App
             this.Speed = speed;
             this.Power = power;
         }
+
         public Car()
         {
 
@@ -27,6 +28,5 @@ namespace App
         {
             Console.WriteLine($"{this.Model}, {this.Speed}, {this.Power}");
         }
-        
     }
 }
